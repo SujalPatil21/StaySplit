@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(
+        origins = {
+                "http://localhost:3000",
+                "https://sujalpatil21.github.io"
+        }
+)
 @RequestMapping("/api")
 public class BillController {
 
