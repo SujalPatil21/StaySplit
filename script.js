@@ -26,7 +26,8 @@ async function calculate(){
     });
   }
 
-  const res=await fetch("https://staysplit.onrender.com",{
+const res=await fetch("https://staysplit.onrender.com/api/split",{
+
     method:"POST",
     headers:{ "Content-Type":"application/json"},
     body:JSON.stringify({totalBill,people})
