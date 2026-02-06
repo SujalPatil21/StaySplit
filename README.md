@@ -6,7 +6,7 @@ StaySplit is a full-stack web application that fairly splits shared utility bill
 
 ## Live Demo
 
- **Live Demo:** [Visit the Website](https://sujalpatil21.github.io/StaySplit/)
+[Visit the Website](https://sujalpatil21.github.io/StaySplit/)
 
 ---
 
