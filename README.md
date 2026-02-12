@@ -6,7 +6,8 @@ StaySplit is a full-stack web application that fairly splits shared utility bill
 
 ## Live Demo
 
-[Visit the Website](https://sujalpatil21.github.io/StaySplit/)
+Visit the Website:  
+https://sujalpatil21.github.io/StaySplit/
 
 ---
 
@@ -20,11 +21,55 @@ In shared living environments, roommates often stay for different durations, mak
 
 - Add and remove roommates dynamically  
 - Input number of days stayed per person  
-- Automatic fair bill calculation  
-- REST-based backend  
+- Automatic proportional bill calculation  
+- REST-based backend architecture  
 - Deployed full-stack system  
 - Cross-origin enabled communication  
 - Clean and responsive UI  
+
+---
+
+## System Architecture
+
+StaySplit follows a client-server architecture with independent frontend and backend deployments.
+
+- Frontend hosted on GitHub Pages  
+- Backend containerized using Docker  
+- Backend deployed on Render  
+- REST-based communication between frontend and backend  
+
+### Architecture Diagram
+
+![StaySplit Architecture](architecture.png)
+
+---
+
+### Architecture Overview
+
+**Client Layer**
+- User interacts through browser  
+- Static frontend served via GitHub Pages  
+- Sends HTTP POST requests to backend  
+
+**Frontend Layer**
+- HTML, CSS, JavaScript  
+- Handles form input and result rendering  
+- Communicates with backend using Fetch API  
+
+**Backend Layer**
+- Spring Boot REST API  
+- Controller layer handles HTTP requests  
+- Service layer performs bill calculation logic  
+- Returns structured JSON response  
+
+**Containerization**
+- Backend packaged inside Docker container  
+- Docker image deployed on Render  
+
+**Communication**
+- REST API over HTTP  
+- JSON request and response format  
+- CORS enabled for cross-origin requests  
 
 ---
 
@@ -41,8 +86,9 @@ In shared living environments, roommates often stay for different durations, mak
 - Maven  
 
 ### Deployment
-- Render (Backend)  
-- GitHub Pages (Frontend)  
+- Docker (Backend Containerization)  
+- Render (Backend Hosting)  
+- GitHub Pages (Frontend Hosting)  
 
 ---
 
@@ -50,36 +96,37 @@ In shared living environments, roommates often stay for different durations, mak
 
 1. User enters bill amount and roommate details  
 2. Frontend sends POST request to backend  
-3. Backend processes data and calculates shares  
-4. Backend returns computed results  
-5. Frontend displays result table  
+3. Backend processes data and calculates proportional shares  
+4. Backend returns computed results in JSON format  
+5. Frontend displays the result table  
 
 ---
 
 ## Deployment Strategy
 
 - Backend containerized using Docker  
-- Backend deployed on Render  
+- Backend deployed on Render cloud platform  
 - Frontend hosted using GitHub Pages  
+- Environment variables managed securely on Render  
 
 ---
 
 ## Error Handling
 
-- Input validation  
-- Invalid number checks  
+- Input validation for empty and invalid fields  
+- Numeric validation for bill amount and days  
 - Graceful JSON parsing  
-- User-friendly error display  
+- User-friendly error messages  
 
 ---
 
 ## Future Enhancements
 
-- User authentication  
-- Persistent database storage  
+- User authentication and login system  
+- Persistent database integration  
 - Bill history tracking  
-- Export reports (PDF / CSV)  
-- Mobile application  
+- Export reports in PDF or CSV  
+- Mobile application version  
 
 ---
 
@@ -91,8 +138,7 @@ MIT License
 
 ## Author
 
-**Sujal Patil**
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/SujalPatil21)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sujalbpatil21)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sujalpatil21@gmail.com)
+Sujal Patil  
+https://github.com/SujalPatil21  
+https://www.linkedin.com/in/sujalbpatil21  
+mailto:sujalpatil21@gmail.com
